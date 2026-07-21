@@ -7,3 +7,8 @@
 
 %:
 	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_auto_test:
+	# No unit test suite; runtime deps (fastmcp, zabbix_utils, ...) aren't
+	# available at build time, so `unittest discover` fails importing the
+	# package itself.
