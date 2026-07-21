@@ -45,8 +45,8 @@ zabbix-mcp = "zabbix_mcp_server:main"
 requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
-[tool.setuptools]
-packages = ["src"]
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [tool.setuptools.package-data]
-src = ["*.py"]
+zabbix_mcp_server = ["*.py"]
