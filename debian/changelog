@@ -1,3 +1,16 @@
+mcp-server-zabbix (2.0.1-1) unstable; urgency=medium
+
+  * Rename source/binary package from zabbix-mcp-server to
+    mcp-server-zabbix, matching the mcp-server-<name> convention, with
+    a new mcprack-mcp-server-zabbix companion package.
+  * Remove stale generated build output (debian/zabbix-mcp-server/ and
+    friends) that had been accidentally committed to git with a broken
+    /usr/bin/zabbix-mcp launcher (importing from a nonexistent 'src.
+    zabbix_mcp_server' path); a clean rebuild produces the correct
+    launcher matching the package's actual entry_points.txt.
+
+ -- vitex <info@vitexsoftware.cz>  Thu, 27 Aug 2026 14:30:00 +0200
+
 zabbix-mcp-server (1.1.0-1) unstable; urgency=medium
 
   * Initial Debian package release
