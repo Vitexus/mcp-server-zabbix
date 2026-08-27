@@ -1,3 +1,12 @@
+mcp-server-zabbix (2.0.2-1) unstable; urgency=medium
+
+  * Security fix: READ_ONLY now defaults to true (fail-closed). It
+    previously defaulted to false, contradicting the package
+    description, meaning Zabbix API write methods (create/update/delete)
+    were enabled out of the box unless explicitly disabled.
+
+ -- vitex <info@vitexsoftware.cz>  Thu, 27 Aug 2026 19:27:51 +0200
+
 mcp-server-zabbix (2.0.1-1) unstable; urgency=medium
 
   * Rename source/binary package from zabbix-mcp-server to

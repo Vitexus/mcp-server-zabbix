@@ -76,7 +76,7 @@ def test_environment() -> bool:
         print("Please set either ZABBIX_TOKEN or both ZABBIX_USER and ZABBIX_PASSWORD")
         return False
 
-    read_only = os.getenv("READ_ONLY", "false").lower() in ("true", "1", "yes")
+    read_only = os.getenv("READ_ONLY", "true").lower() in ("true", "1", "yes")
     print(f"ℹ️  Read-only mode: {'Enabled' if read_only else 'Disabled'}")
 
     verify_ssl = os.getenv("VERIFY_SSL", "true").lower() in ("true", "1", "yes")
@@ -231,7 +231,7 @@ def test_read_only_mode() -> bool:
     Returns:
         bool: True if read-only mode works correctly
     """
-    read_only = os.getenv("READ_ONLY", "false").lower() in ("true", "1", "yes")
+    read_only = os.getenv("READ_ONLY", "true").lower() in ("true", "1", "yes")
 
     if not read_only:
         print("\n⏭️  Skipping read-only mode test (not enabled)")

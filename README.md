@@ -126,7 +126,7 @@ The built AppImage will be available in `build/appimage/`.
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `READ_ONLY` | `false` | Set to `true` to allow only read operations |
+| `READ_ONLY` | `true` | Set to `false` to allow write operations |
 | `VERIFY_SSL` | `true` | Enable/disable SSL verification |
 | `ZABBIX_API_WHITELIST` | `.*` | Comma-separated regex patterns for allowed API methods |
 | `ZABBIX_API_BLACKLIST` | (empty) | Comma-separated regex patterns for blocked API methods |

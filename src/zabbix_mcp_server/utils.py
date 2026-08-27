@@ -23,10 +23,13 @@ DANGEROUS_REGEX_PATTERNS = [
 def is_read_only() -> bool:
     """Check if the server is running in read-only mode.
 
+    Defaults to enabled (fail-closed): set READ_ONLY=false to allow
+    Zabbix API write methods (create/update/delete/etc.).
+
     Returns:
         True if READ_ONLY is enabled, False otherwise.
     """
-    return parse_bool_env(EnvVars.READ_ONLY, default=False)
+    return parse_bool_env(EnvVars.READ_ONLY, default=True)
 
 
 def is_read_operation(method: str) -> bool:
