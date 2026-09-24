@@ -1,3 +1,12 @@
+mcp-server-zabbix (2.0.3-1) unstable; urgency=medium
+
+  * Recommend the mcprack-mcp-server-zabbix companion package:
+    installing mcp-server-zabbix alone left it unregistered in mcprack
+    (mcprack has no generic autodetection for this binary), so a plain
+    apt install now pulls the registration package too.
+
+ -- vitex <info@vitexsoftware.cz>  Thu, 24 Sep 2026 19:12:50 +0200
+
 mcp-server-zabbix (2.0.2-1) unstable; urgency=medium
 
   * Security fix: READ_ONLY now defaults to true (fail-closed). It
