@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="console-application">
+  <id>cz.vitexsoftware.zabbix-mcp-server</id>
+  <metadata_license>MIT</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Zabbix MCP Server</name>
+  <summary>MCP server for the Zabbix monitoring API</summary>
+  <description>
+    <p>Zabbix MCP Server is a Model Context Protocol server that exposes the Zabbix monitoring API to AI assistants, so they can query hosts, items, triggers, problems and other monitoring data.</p>
+  </description>
+  <icon type="stock">cz.vitexsoftware.zabbix-mcp-server</icon>
+  <pkgname>mcp-server-zabbix</pkgname>
+  <provides>
+    <binary>mcp-server-zabbix</binary>
+    <binary>zabbix-mcp</binary>
+    <binary>zabbix-mcp-server</binary>
+  </provides>
+  <categories>
+    <category>Network</category>
+    <category>System</category>
+  </categories>
+  <url type="homepage">https://github.com/mpeirone/zabbix-mcp-server</url>
+  <developer id="cz.vitexsoftware">
+    <name>VitexSoftware</name>
+  </developer>
+  <releases>
+    <release version="2.0.3" date="2026-09-24"/>
+  </releases>
+  <content_rating type="oars-1.1"/>
+</component>
