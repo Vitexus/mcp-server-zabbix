@@ -43,7 +43,7 @@ Package: mcprack-mcp-server-zabbix
 Architecture: all
 Depends:
  ${misc:Depends},
- mcprack (>= 1.5.4),
+ mcprack (>= 1.6.0),
  mcp-server-zabbix (= ${binary:Version}),
 Description: Registers Zabbix MCP server into mcprack catalog
  Companion package for mcp-server-zabbix. Installing it registers
